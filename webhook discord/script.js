@@ -15,7 +15,7 @@ function sendMessage() {
                 throw new Error('Network response was not ok');
             }
             alert('Message sent successfully!');
-            // Tambahkan logika lainnya di sini jika diperlukan
+
         })
         .catch(error => {
             alert('There was a problem sending the message:', error);
