@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.game {
+    display: inline-block;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    min-width: 320px; /* Lebar papan permainan */
+    min-height: 320px; /* Tinggi papan permainan */
+    width: fit-content; /* Lebar sesuai isi */
+    height: fit-content; /* Tinggi sesuai isi */
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #eee;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100px; /* Lebar sel */
+    height: 100px; /* Tinggi sel */
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.select {
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* CSS tambahan */
+.result {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff; /* Warna teks menjadi putih */
+    background-color: #333; /* Warna latar belakang menjadi gelap */
+    padding: 10px; /* Padding untuk meningkatkan keterbacaan */
+    border-radius: 5px; /* Agar terlihat lebih menarik */
+    margin-bottom: 20px; /* Membuat jarak dengan elemen lain */
+}
+
+/* CSS tambahan */
+.winner-cell {
+    background-color: #333; /* Warna latar belakang menjadi gelap */
+    color: #fff; /* Warna teks menjadi putih */
+    transition: background-color 0.5s; /* Animasi perubahan warna latar belakang */
+}
+
+.dark-bg {
+    background-color: #333; /* Warna latar belakang pesan kemenangan menjadi gelap */
+    color: #fff; /* Warna teks pesan kemenangan menjadi putih */
+    padding: 10px; /* Padding untuk meningkatkan keterbacaan */
+    border-radius: 5px; /* Agar terlihat lebih menarik */
+    margin-bottom: 20px; /* Membuat jarak dengan elemen lain */
+}
