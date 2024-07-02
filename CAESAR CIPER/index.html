@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher Encrypt/Decrypt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Encrypt and Decrypt</h1>
+            <h2>With CaesarChiper Method</h2>
+            <div class="form-group">
+                <label for="inputText">Text:</label>
+                <textarea id="inputText" rows="4" placeholder="Enter your text here..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="shift">Shift (Pergeseran Huruf):</label>
+                <input type="number" id="shift" value="3" min="1" max="25">
+            </div>
+            <div class="form-group button-group">
+                <button onclick="encrypt()">Encrypt</button>
+                <button onclick="decrypt()">Decrypt</button>
+                <button onclick="clearText()">Clear</button>
+            </div>
+            <div class="form-group">
+                <label for="outputText">Output:</label>
+                <textarea id="outputText" rows="4" readonly></textarea>
+            </div>
+        </div>
+        <div class="container faq">
+            <h2>Informasi</h2>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ('faq1')">Apa Itu Encrypt & Decrypt</button>
+                <div class="faq-answer" id="faq1">
+                    <p>Encrypt adalah proses mengubah teks asli (plaintext) menjadi teks yang tidak dapat dibaca (ciphertext) menggunakan algoritma tertentu, dengan tujuan menjaga kerahasiaan informasi.Decrypt adalah proses kebalikan dari enkripsi, yaitu mengubah teks yang tidak dapat dibaca (ciphertext) kembali menjadi teks asli (plaintext) menggunakan kunci dekripsi yang tepat, </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ('faq2')">Bagaimana Caesar Cipher Bekerja?</button>
+                <div class="faq-answer" id="faq2">
+                    <p>Setiap huruf dalam teks asli digeser sejumlah tempat tertentu sesuai dengan nilai pergeseran. Misalnya, dengan pergeseran 3, A akan digantikan oleh D, B menjadi E, dan seterusnya.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ('faq3')">Bagaimana cara menggunakan Caesar Chiper?</button>
+                <div class="faq-answer" id="faq3">
+                    <p>Kamu bisa memasukan text dengan contoh "HELLO" dan juga kamu masukan nilai shift untuk menentukan pergeseran huruf, tekan button Encrypt untuk mengacak kata "HELLO", Jika kamu ingin mengembalikanya menjadi "HELLO" kamu dapat memasukan hasil encrypt dari "HELLO" dan menekan button Decrypt</p>
+                </div>
+            </div>
+            <div><h4>Developed By <a href="https://www.instagram.com/ryyannb?igsh=Ynp6Yjd1cDExMnFv">Ariyan</a></h4></div>
+            <div><h4>Full Source Code<a href="https://www.instagram.com/ryyannb?igsh=Ynp6Yjd1cDExMnFv"> GitHub</a></h4></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
